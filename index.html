@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div class="w-full max-w-md bg-white rounded-3xl shadow-lg p-6 mt-6">
+
+        <h1 class="text-3xl font-bold text-blue-600 text-center mb-6">⛅ Weather App</h1>
+
+        <div class="flex gap-3 mb-4">
+            <input id="cityInput" class="flex-1 px-4 py-3 rounded-xl border border-gray-200 text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition" type="text" placeholder="Enter city name..."/>
+            <button id="searchBtn" class="px-6 py-3 bg-blue-700 hover:bg-blue-600 text-white text-sm font-semibold rounded-xl transition duration-200 active:scale-95">Search</button>
+        </div>
+
+        <p id="errorMsg" class="hidden text-red-500 text-md text-center mb-3"></p>
+
+        <div id="loader" class="hidden justify-center my-6">
+            <div class="w-8 h-8 border-4 border-blue-300 border-t-blue-800 rounded-full animate-spin"></div>
+        </div>
+
+        <div id="currentWeather" class="hidden bg-blue-400 rounded-2xl p-5 text-white text-center">
+            <h2 id="cityName" class="text-3xl font-bold mb-1"></h2>
+            <p id="weatherDesc" class="text-blue-900 text-lg capitalize mb-1"></p>
+            <img id="weatherIcon" src="" alt="icon" class="w-20 mx-auto" />
+            <p id="temperature" class="text-6xl font-extrabold my-2"></p>
+            <div class="flex justify-around mt-3 text-md border-t border-white/50 pt-3">
+                <span id="feelsLike" class="text-center"></span>
+                <span id="humidity" class="text-center"></span>
+                <span id="windspeed" class="text-center"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
