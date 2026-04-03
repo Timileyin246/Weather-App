@@ -51,7 +51,7 @@ function displayWeather(data) {
 
 
 function showError(msg) {
-  errorMsg.textContent = `⚠️ ${msg}`;
+  errorMsg.textContent = `${msg}`;
   errorMsg.classList.remove("hidden");
 }
 
