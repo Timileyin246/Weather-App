@@ -44,7 +44,7 @@ function displayWeather(data) {
   document.getElementById("temperature").textContent  = `${Math.round(main.temp)}°C`;
   document.getElementById("feelsLike").innerHTML    = `Feels Like <br> ${Math.round(main.feels_like)}°`;
   document.getElementById("humidity").innerHTML     = `Humidity <br> ${main.humidity}%`;
-  document.getElementById("windspeed").innerHTML    = `Wind Speed <br> ${wind.speed} m/s`;
+  document.getElementById("windSpeed").innerHTML    = `Wind Speed <br> ${wind.speed} m/s`;
 
   document.getElementById("currentWeather").classList.remove("hidden");
 }
